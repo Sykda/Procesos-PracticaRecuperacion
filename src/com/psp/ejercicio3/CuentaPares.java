@@ -2,11 +2,12 @@ package com.psp.ejercicio3;
 
 import java.util.Date;
 
-public class CuentaPares implements Runnable {
+public class CuentaPares extends Thread {
 
 	int n = 0;
-	int x = 1;
-	int y = 0;// 100000000
+	int x;
+	int y;// 100000000
+	long time;
 
 	long t0 = (new Date()).getTime();
 
@@ -16,7 +17,7 @@ public class CuentaPares implements Runnable {
 		this.y = y;
 	}
 
-	@Override
+	
 	public void run() {
 
 		for (int i = x; i <= y; i++) {
@@ -29,12 +30,30 @@ public class CuentaPares implements Runnable {
 		}
 
 		long t1 = (new Date()).getTime();
-		long time = t1 - t0;
+		time = t1 - t0;
 
-		System.out.println("Número de pares en el intervalo: " + x + " - " + y + " es igual a " + n + " calculado en "
-				+ time + " milisegundos");
-
+		
 	}
+
+	public int getN() {
+		return n;
+	}
+
+	public void setN(int n) {
+		this.n = n;
+	}
+
+
+	public long getTime() {
+		return time;
+	}
+
+
+	public void setTime(long time) {
+		this.time = time;
+	}
+	
+	
 	
 	
 	
