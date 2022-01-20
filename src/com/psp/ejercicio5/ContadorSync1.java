@@ -8,7 +8,8 @@ class ContadorSync1 {
 		return contador;
 	}
 
-	public int incrementa() {
+	// Synchronized
+	public synchronized int incrementa() {
 		this.contador++;
 		return contador;
 	}

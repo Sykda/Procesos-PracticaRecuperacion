@@ -6,7 +6,7 @@ public class CuentaPares extends Thread {
 
 	int n = 0;
 	int x;
-	int y;// 100000000
+	int y;
 	long time;
 
 	long t0 = (new Date()).getTime();
@@ -17,7 +17,6 @@ public class CuentaPares extends Thread {
 		this.y = y;
 	}
 
-	
 	public void run() {
 
 		for (int i = x; i <= y; i++) {
@@ -32,7 +31,6 @@ public class CuentaPares extends Thread {
 		long t1 = (new Date()).getTime();
 		time = t1 - t0;
 
-		
 	}
 
 	public int getN() {
@@ -43,19 +41,11 @@ public class CuentaPares extends Thread {
 		this.n = n;
 	}
 
-
 	public long getTime() {
 		return time;
 	}
 
-
 	public void setTime(long time) {
 		this.time = time;
 	}
-	
-	
-	
-	
-	
-
 }

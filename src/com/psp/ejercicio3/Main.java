@@ -25,7 +25,7 @@ public class Main {
 		
 		long t= h1.getTime()+h2.getTime()+h3.getTime()+h4.getTime()+h5.getTime();
 		
-		 System.out.println("Número de pares en el intervalo: " + h1.x + " - " + h5.y +
+		 System.out.println("Nï¿½mero de pares en el intervalo: " + h1.x + " - " + h5.y +
 		  " es igual a " + n + " calculado en "  +t+ " milisegundos");
 		 
 
