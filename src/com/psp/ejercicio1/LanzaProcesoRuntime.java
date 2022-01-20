@@ -8,7 +8,7 @@ public class LanzaProcesoRuntime {
 
     public static void main(String[] args) throws IOException {
 
-        Process cmd = Runtime.getRuntime().exec("cmd ver ");
+        Process cmd = Runtime.getRuntime().exec("cmd ver/? ");
         BufferedReader br = new BufferedReader(new InputStreamReader(cmd.getInputStream()));
 
         String linea;

@@ -10,7 +10,7 @@ public class LanzaProcesoProcessBuilder {
 
         try {
 
-            ProcessBuilder cmd = new ProcessBuilder("cmd", "ver");
+            ProcessBuilder cmd = new ProcessBuilder("cmd", "ver/?");
 
             BufferedReader br = new BufferedReader(new InputStreamReader(cmd.start().getInputStream()));
     
