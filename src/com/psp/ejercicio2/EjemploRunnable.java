@@ -2,11 +2,11 @@ package com.psp.ejercicio2;
 
 public class EjemploRunnable {
 
-    public static void main(String[] args) {
-        
-        HiloRunnable hiloRunnable= new HiloRunnable(1, "Runnable");
+	public static void main(String[] args) {
 
-        hiloRunnable.run();
-    }
+		HiloRunnable hiloRunnable = new HiloRunnable(1, "Runnable");
+
+		hiloRunnable.run();
+	}
 
 }

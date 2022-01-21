@@ -6,6 +6,11 @@ class ContadorSync3 {
 
 	private int contador = 0;
 	final Semaphore semp = new Semaphore(1);
+	private static final ContadorSync3 contadorSync3 = new ContadorSync3();
+
+	public static ContadorSync3 getInstance() {
+		return contadorSync3;
+	}
 
 	public int getCuenta() {
 		return contador;

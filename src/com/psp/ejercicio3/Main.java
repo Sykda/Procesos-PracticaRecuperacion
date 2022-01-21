@@ -14,20 +14,19 @@ public class Main {
 		h3.start();
 		h4.start();
 		h5.start();
-		
+
 		h1.join();
 		h2.join();
 		h3.join();
 		h4.join();
 		h5.join();
 
-		int n= h1.getN()+h2.getN()+h3.getN()+h4.getN()+h5.getN();
-		
-		long t= h1.getTime()+h2.getTime()+h3.getTime()+h4.getTime()+h5.getTime();
-		
-		 System.out.println("N�mero de pares en el intervalo: " + h1.x + " - " + h5.y +
-		  " es igual a " + n + " calculado en "  +t+ " milisegundos");
-		 
+		int n = h1.getN() + h2.getN() + h3.getN() + h4.getN() + h5.getN();
+
+		long t = h1.getTime() + h2.getTime() + h3.getTime() + h4.getTime() + h5.getTime();
+
+		System.out.println("N�mero de pares en el intervalo: " + h1.x + " - " + h5.y + " es igual a " + n
+				+ " calculado en " + t + " milisegundos");
 
 	}
 }

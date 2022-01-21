@@ -6,22 +6,22 @@ import java.io.InputStreamReader;
 
 public class LanzaProcesoProcessBuilder {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        try {
+		try {
 
-            ProcessBuilder cmd = new ProcessBuilder("cmd", "ver/?");
+			ProcessBuilder cmd = new ProcessBuilder("cmd", "ver/?");
 
-            BufferedReader br = new BufferedReader(new InputStreamReader(cmd.start().getInputStream()));
-    
-            String linea;
-    
-            while ((linea = br.readLine()) != null) {
-                System.out.println(linea);
-            }
+			BufferedReader br = new BufferedReader(new InputStreamReader(cmd.start().getInputStream()));
 
-        } catch (IOException ex) {
-            System.out.println(ex.getMessage());
-        }
-    }
+			String linea;
+
+			while ((linea = br.readLine()) != null) {
+				System.out.println(linea);
+			}
+
+		} catch (IOException ex) {
+			System.out.println(ex.getMessage());
+		}
+	}
 }

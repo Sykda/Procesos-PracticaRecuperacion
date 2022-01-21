@@ -1,11 +1,11 @@
-package com.psp.ejercicio5;
+package com.psp.ejercicio4;
 
-class ContadorSync1 {
+class ContadorSync {
 
 	private int contador = 0;
-	private static final ContadorSync1 contadorSync1 = new ContadorSync1();
+	private static final ContadorSync contadorSync1 = new ContadorSync();
 
-	public static ContadorSync1 getInstance() {
+	public static ContadorSync getInstance() {
 		return contadorSync1;
 	}
 

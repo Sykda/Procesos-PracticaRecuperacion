@@ -6,15 +6,15 @@ import java.io.InputStreamReader;
 
 public class LanzaProcesoRuntime {
 
-    public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException {
 
-        Process cmd = Runtime.getRuntime().exec("cmd ver/? ");
-        BufferedReader br = new BufferedReader(new InputStreamReader(cmd.getInputStream()));
+		Process cmd = Runtime.getRuntime().exec("cmd ver/? ");
+		BufferedReader br = new BufferedReader(new InputStreamReader(cmd.getInputStream()));
 
-        String linea;
+		String linea;
 
-        while ((linea = br.readLine()) != null) {
-            System.out.println(linea);
-        }
-    }
+		while ((linea = br.readLine()) != null) {
+			System.out.println(linea);
+		}
+	}
 }
