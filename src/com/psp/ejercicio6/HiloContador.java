@@ -1,36 +1,27 @@
 package com.psp.ejercicio6;
 
-import java.util.List;
+public class HiloContador implements Runnable {
 
-public class HiloContador extends Thread {
-
+	// Contador
 	ContadorSync contadorSync = ContadorSync.getInstance();
 
-	private final List<Integer> listaTareas;
+	// Contenedor
+	private final Contenedor contenedor;
 
-	public HiloContador(List<Integer> listaCompartida) {
-		this.listaTareas = listaCompartida;
+	public HiloContador(Contenedor contenedor) {
+		this.contenedor = contenedor;
 	}
 
-	public synchronized void run() {
+	public void run() {
 
 		while (true) {
-			if (listaTareas.isEmpty()) {
-				try {
 
-					wait();
+			contenedor.consume();
+			contadorSync.incrementa();
 
-				} catch (InterruptedException e) {
-					System.out.println("Hilo interrumpido.");
-				}
-			} else {
+			System.out.println("El número de pares encontrados es: " + contadorSync.getCuenta());
 
-				for (int i : listaTareas) {
-
-					contadorSync.incrementa();
-					listaTareas.remove(i);
-				}
-			}
 		}
 	}
+
 }
