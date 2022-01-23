@@ -2,7 +2,6 @@ package com.psp.ejercicio6;
 
 class ContadorSync {
 
-	private boolean flag = true;
 	private int contador = 0;
 	private static final ContadorSync contadorSync = new ContadorSync();
 
@@ -14,15 +13,10 @@ class ContadorSync {
 		return contador;
 	}
 
-	// Flag
-	public int incrementa() {
+	public synchronized int incrementa() {
 
-		if (flag) {
+		this.contador++;
 
-			flag = false;
-			this.contador++;
-			flag = true;
-		}
 		return contador;
 	}
 

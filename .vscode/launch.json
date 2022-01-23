@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch EjemploRunnable",
+            "request": "launch",
+            "mainClass": "com.psp.ejercicio2.EjemploRunnable",
+            "projectName": "nombre apellidos_psp_recuperacionU1U2"
+        },
+        {
+            "type": "java",
+            "name": "Launch EjemploThread",
+            "request": "launch",
+            "mainClass": "com.psp.ejercicio2.EjemploThread",
+            "projectName": "nombre apellidos_psp_recuperacionU1U2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "com.psp.ejercicio3.Main",
+            "projectName": "nombre apellidos_psp_recuperacionU1U2"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadPool",
+            "request": "launch",
+            "mainClass": "com.psp.ejercicio4.ThreadPool",
+            "projectName": "nombre apellidos_psp_recuperacionU1U2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(1)",
+            "request": "launch",
+            "mainClass": "com.psp.ejercicio5.Main",
+            "projectName": "nombre apellidos_psp_recuperacionU1U2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(2)",
+            "request": "launch",
+            "mainClass": "com.psp.ejercicio6.Main",
+            "projectName": "nombre apellidos_psp_recuperacionU1U2"
+        }
+    ]
+}
