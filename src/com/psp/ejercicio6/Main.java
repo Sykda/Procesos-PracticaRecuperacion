@@ -1,38 +1,32 @@
 package com.psp.ejercicio6;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
 
 	public static void main(String[] args) throws Exception {
 
-		final List<Integer> listaTareas = new ArrayList<Integer>();
-		ContadorSync contadorSync = ContadorSync.getInstance();
-		HiloSync hiloS = null;
-		HiloContador hiloC = null;
+		Contenedor contenedor = new Contenedor();
+
+		Thread hiloS = null;
+		Thread hiloC = null;
 
 		int i = 1;
+
+		// Hilos 0 y 1
 		for (int a = 0; a < 2; a++) {
 
-			hiloS = new HiloSync(i, i + 99, listaTareas);
+			hiloS = new Thread(new HiloSync(contenedor, i, i + 999));
 			hiloS.start();
 			i++;
-			i = i + 99;
+			i = i + 999;
 
 		}
 
+		// Hilos 2 y 3
 		for (int a = 0; a < 2; a++) {
 
-			hiloC = new HiloContador(listaTareas);
+			hiloC = new Thread(new HiloContador(contenedor));
 			hiloC.start();
 
 		}
-
-		hiloS.join();
-		hiloC.join();
-
-		System.out.println(contadorSync.getCuenta());
-
 	}
 }
