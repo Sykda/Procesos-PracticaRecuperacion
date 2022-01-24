@@ -19,9 +19,8 @@ public class HiloContador implements Runnable {
 			contenedor.consume();
 			contadorSync.incrementa();
 
-			System.out.println("El número de pares encontrados es: " + contadorSync.getCuenta());
+			System.out.println("El numero de pares encontrados es: " + contadorSync.getCuenta());
 
 		}
 	}
-
 }

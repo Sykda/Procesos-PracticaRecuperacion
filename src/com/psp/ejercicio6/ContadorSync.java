@@ -19,5 +19,4 @@ class ContadorSync {
 
 		return contador;
 	}
-
 }
