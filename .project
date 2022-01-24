@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>nombre apellidos_psp_recuperacionU1U2</name>
+	<name>RecuperacionProcesos</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1641833892272</id>
+			<id>0</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
